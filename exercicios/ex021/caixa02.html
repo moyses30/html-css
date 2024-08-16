@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+   <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 10px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: darkgray;
+            padding: 5px;
+            box-shadow: 1px 1px 1px black;
+            
+        }
+        nav > a {
+            background-color: rgb(216, 213, 208);
+            text-decoration:none;
+            color: rgb(32, 30, 30);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color:lightblue ;
+            padding: 5px;
+        }
+        article> aside{
+            background-color: lightcoral;
+        }
+         footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer>p { 
+            margin: 0px;
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+
+            </article>
+            <article>
+                <h2>Noticias sobre brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, nobis sunt. In nisi nesciunt, neque eveniet laudantium quia. Tenetur quasi illo accusamus alias praesentium a non reprehenderit, veniam nostrum. Quo.</p>
+                <aside>
+                    <p>Artigo escrito por jose da silva </p>
+                </aside>
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido pelo cursoemvideo</p>
+    </footer>
+</body>
+</html>

@@ -15,7 +15,17 @@
             border-collapse: collapse; /* Bordar fica colada */
 
         }
-        
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: blue;
+        }
+        tbody> tr:nth-child(2n) { /* colocar linha zibrada */
+            background-color: rgb(230, 255, 5) ;
+
+        }
         
         td, th{
             border: 1px solid black;
@@ -33,6 +43,7 @@
     <h1>Uso de tabelas grandes </h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES   
+        CAPTION LEGENDA 
         TABLE   
             THEAD
                 TR,TD,TH    
@@ -40,12 +51,13 @@
                 TR,TD,TH    
     -->
     <table>
-        <thead>
+        <caption>Populçao da unidades federativas </caption>
+        <thead> <!--Cabeçalho-->
             <tr>
                 <th>Estado</th>
                 <th>População</th>
             </tr>
-        </thead>
+        </thead><!--Cabeçalho Fim-->
     
     <tbody>
         <tr>
@@ -59,6 +71,22 @@
         <tr>
             <td>Rio de Janeiro</td>
             <td>17 264 943</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td>14 850 513</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td>11 824 665</td>
+        </tr>
+        <tr>
+            <td>Rio Grande Do Sul</td>
+            <td>11 229 915</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td>9 539 029</td>
         </tr>
     </tbody>
     <tfoot>

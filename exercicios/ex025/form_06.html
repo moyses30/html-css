@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on"> 
+        <fieldset>
+            <legend>Sexo</legend>
+            
+            <input type="radio" name="sexo" id="ismas"><label for="ismas">Masculino</label>
+            <input type="radio" name="sexo" id="isfm"><label for="isfm">Feminino</label>
+        </fieldset>
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="icor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nivel de satisfação</label>
+            <input type="range" name="inivel" id="inivel" min="0" max="10" step="1">
+        </p>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="ibas"><label for="ibas">Basquete</label>
+            <input type="checkbox" name="esfut" id="ifut"><label for="ifut">Futebol</label>
+            <input type="checkbox" name="esfut" id="inata"><label for="inata">Natação</label>
+            <input type="checkbox" name="esfut" id="ivolei"><label for="ivolei">Volei</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

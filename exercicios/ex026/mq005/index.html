@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu site </h1>
+        <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
+        <menu id="itens">
+           <ul>
+                <li><a href="#">Opção01</a></li>
+                <li><a href="#">Opção02</a></li>
+                <li><a href="#">Opção 03</a></li>
+                <li><a href="#">Opção 04 </a></li>
+
+           </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testanto</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, impedit eius natus cumque cupiditate doloribus libero modi dolorum quae facere tenetur veniam sed dolorem! Vero qui veritatis sunt laborum enim?</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta unde provident error ad maiores quam suscipit doloribus? Eveniet quam provident nisi! Omnis, necessitatibus enim doloribus perferendis beatae libero consectetur.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta modi quidem, iusto reprehenderit rem debitis, exercitationem ipsum quibusdam iure totam placeat neque illum nesciunt dolores magni dignissimos deleniti nulla!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet atque eveniet ex! Pariatur nisi explicabo illo commodi ad corrupti dolor culpa minus aliquam maxime cum, quibusdam quasi consequatur est.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo laboriosam recusandae consequuntur, veritatis maiores quasi esse illum consequatur consectetur natus illo est, autem nesciunt quam molestiae. Neque cum facilis distinctio.</p>
+        </article>
+
+    </main>
+
+    <script>
+        function clickMenu() {
+            if ( itens.style.display == 'block'){
+                itens.style.display = 'none';
+            }else{
+                itens.style.display = 'block';
+            }    
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
